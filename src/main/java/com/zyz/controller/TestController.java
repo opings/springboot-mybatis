@@ -47,5 +47,8 @@ public class TestController {
         return "index";
     }
 
-
+    @RequestMapping(value = "/vue", method = RequestMethod.GET)
+    public String vue(Model model){
+        return "vue";
+    }
 }

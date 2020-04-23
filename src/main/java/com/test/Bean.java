@@ -1,11 +1,27 @@
 package com.test;
 
+import com.SpringbootMybatisApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
+import sun.misc.Contended;
+
+import javax.annotation.PostConstruct;
+
 /**
  * Created by Administrator on 2018/9/20.
  */
+@Component
 public class Bean {
     private String s;
     private Long l;
+
+    @PostConstruct
+    public Bean Bean() {
+        Bean bean = new Bean();
+        bean.setL(55L);
+        bean.setS("sssss");
+        return bean;
+    }
 
     public String getS() {
         return s;
@@ -31,7 +47,11 @@ public class Bean {
                 '}';
     }
 
-    public static void main(String[] args) {
-        System.out.println(3366%32);
-    }
+//    public static void main(String[] args) {
+//        ApplicationContext applicationContext = new ApplicationContext(SpringbootMybatisApplication.main(););
+//
+//
+//
+////        System.out.println(3366%32);
+//    }
 }

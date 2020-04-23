@@ -146,8 +146,6 @@ public class SnowFlakeGenerator {
             long l = sfg.nextId();
             System.out.println(l);
         }
-
-
     }
 
 
