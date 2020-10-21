@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /zyz
+    context-path: /pet
 
 
 spring:
@@ -82,7 +82,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.zyz.model
+  type-aliases-package: com.pet.model
 
 #pagehelper
 pagehelper:
